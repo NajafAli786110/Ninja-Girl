@@ -1,0 +1,140 @@
+/* Google Font: Catamaran */
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Gravox";
+  src: url("/fonts/Gravox.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@import "tailwindcss";
+
+:root {
+  --color-primary: #3b1e54;
+  --color-accent: #e63946;
+  --color-highlight: #00b4d8;
+  --color-bg-dark: #0d0d0e;
+  --color-bg-gradient: linear-gradient(135deg, #000814, #001d3d, #3b1e54);
+  --color-white: #ffffff;
+  --color-gradient1: linear-gradient(135deg, #ff6a00, #ee0979);
+  --color-gradient2: linear-gradient(135deg, #facc00, #e6aa05);
+
+  --font-gravox: "Gravox", sans-serif;
+  --font-catamaran: "Catamaran", sans-serif;
+}
+
+/* Reset & Defaults */
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-catamaran);
+  font-size: 16px;
+  background: var(--color-bg-dark);
+  color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-gravox);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 8rem);
+}
+h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+h3 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+h4 {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+}
+h5 {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+}
+h6 {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
+
+p {
+  font-family: var(--font-catamaran);
+  font-weight: 400;
+  color: #e0e0e0;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* example gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-section {
+  background: url("/assets/hero-bg.png") no-repeat center center/cover;
+  position: relative;
+  z-index: -2;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.polygon-bg {
+  background: #1a1d26;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+}
+
+.polygon-logo {
+  background-color: #1a1d26;
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+
+.gradient-bg,
+.gradient-bg2 {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  transform: rotate(90deg);
+  top: 0;
+  left: 0;
+  border-radius: 150px;
+  background: var(--color-gradient1);
+  filter: blur(250px);
+  z-index: -1;
+}
+
+.gradient-bg2 {
+  left: unset;
+  right: 0;
+  background: var(--color-gradient2);
+}
+
+.hero-banner-bg {
+  position: absolute;
+  top : 0;
+  z-index: -1;
+  transform: translateX(-12%);
+}
