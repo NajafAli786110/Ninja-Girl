@@ -122,7 +122,8 @@ p {
   left: 0;
   border-radius: 150px;
   background: var(--color-gradient1);
-  filter: blur(250px);
+  filter: blur(25
+0px);
   z-index: -1;
 }
 
