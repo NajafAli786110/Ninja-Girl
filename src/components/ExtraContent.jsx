@@ -38,7 +38,7 @@ const ExtraContent = () => {
   ];
 
   return (
-    <section className="w-full gallery-scrolling flex items-center justify-center py-40">
+    <section className="w-full gallery-scrolling flex items-center justify-center py-20">
       <div className="container flex flex-col items-center justify-center gap-10">
         <div className="top_content flex flex-col gap-4 max-w-full md:max-w-2xl text-center">
           <span className="section_subheading">About Our Gaming Site</span>
@@ -55,7 +55,7 @@ const ExtraContent = () => {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="size-48 rounded-full border-2 border-white bg-amber-600"
+                  className="size-52 rounded-full border-2 border-white bg-amber-600 p-4"
                 />
                 <div className="w-full content flex flex-col items-center gap-2">
                   <h5 className="text-2xl!">{member.name}</h5>
