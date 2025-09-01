@@ -93,3 +93,58 @@
 }
 
 /* Game Features Section End*/
+
+/* Gameplay Video Section  */
+.video-section .w-full {
+  background: var(--color-gradient1);
+}
+
+.video-section .main-video {
+  border: 8px solid transparent;
+  border-radius: 30px;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(to right, green, yellow, red);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+/* Gameplay Video Section End */
+
+
+/* Extra Content Start */
+.team__item::before, .team__item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -60px;
+  width: 70px;
+  height: 320px;
+  background: #45f882;
+  -webkit-transform: rotate(-55deg);
+  -moz-transform: rotate(-55deg);
+  -ms-transform: rotate(-55deg);
+  -o-transform: rotate(-55deg);
+  transform: rotate(-55deg);
+  opacity: .55;
+  z-index: -1;
+}
+
+.team__item::after {
+  left: auto;
+  right: 0;
+  -webkit-transform: rotate(55deg);
+  -moz-transform: rotate(55deg);
+  -ms-transform: rotate(55deg);
+  -o-transform: rotate(55deg);
+  transform: rotate(55deg);
+}
+
+.team__item:hover {
+  -webkit-transform: translateY(-7px);
+  -moz-transform: translateY(-7px);
+  -ms-transform: translateY(-7px);
+  -o-transform: translateY(-7px);
+  transform: translateY(-7px);
+  transition: all 0.3s ease-out 0s;
+}
+

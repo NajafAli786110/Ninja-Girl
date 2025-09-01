@@ -1,4 +1,4 @@
-import { GameStory, Hero, HeroSlider, VideoSection } from "../components";
+import { DownloadSection, ExtraContent, GameStory, Hero, HeroSlider, VideoSection } from "../components";
 
 const Home = () => {
   return (
@@ -7,6 +7,8 @@ const Home = () => {
       <HeroSlider />
       <GameStory />
       <VideoSection />
+      <DownloadSection />
+      <ExtraContent />
     </>
   );
 };
