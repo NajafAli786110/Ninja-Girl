@@ -6,3 +6,4 @@ export { default as DownloadSection } from "./DownloadSection";
 export { default as ExtraContent } from "./ExtraContent";
 export { default as Footer } from "./Footer";
 export { default as Navbar } from "./Navbar";
+export { default as HeroSlider } from "./HeroSlider";

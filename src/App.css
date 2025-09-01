@@ -1,0 +1,95 @@
+/* Hero Section */
+
+.hero-section {
+  background: url("/assets/hero-bg.png") no-repeat center center/cover;
+  position: relative;
+  z-index: -2;
+}
+
+.hero-section::after,
+.hero-swiper-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.polygon-bg {
+  background: #1a1d26;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+}
+
+.polygon-logo {
+  background-color: #1a1d26;
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+
+.gradient-bg,
+.gradient-bg2 {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  transform: rotate(90deg);
+  top: 0;
+  left: 0;
+  border-radius: 150px;
+  background: var(--color-gradient1);
+  filter: blur(250px);
+  z-index: -1;
+}
+
+.gradient-bg2 {
+  left: unset;
+  right: 0;
+  background: var(--color-gradient2);
+}
+
+.hero-banner-bg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transform: translateX(-12%);
+}
+
+/* Hero Section End*/
+
+/* Swipper Start */
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--color-white) !important;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  border-radius: 100px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: linear-gradient(135deg, #ce7807, #c98b06);
+  transition: all 0.3s ease-in-out;
+  transform: rotate(-32deg) scale(1.1);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px !important;
+}
+
+/* Swipper End */
+
+/* Game Features Section */
+.clip-collage {
+  width: 100%;
+  height: 800px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-image: url("/feature-section-left-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Game Features Section End*/

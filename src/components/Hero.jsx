@@ -53,8 +53,8 @@ const Hero = () => {
 
         {/* Middle Container */}
         <div className="middle-container flex flex-1 justify-center items-center">
-          <div class="hero-banner-bg">
-            <img class="w-full" src="/assets/hero-bg-orange.png" alt="banner" />
+          <div className="hero-banner-bg">
+            <img className="w-full" src="/assets/hero-bg-orange.png" alt="banner" />
           </div>
           <img
             src="https://gameplex-final.vercel.app/gameplex-v1/assets/img/hero.png"
