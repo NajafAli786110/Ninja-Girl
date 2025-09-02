@@ -50,18 +50,29 @@ const games = [
 
 const HeroSlider = () => {
   return (
-    <section className="hero-swiper-slider w-full flex justify-center items-center relative pb-16">
+    <section className="hero-swiper-slider w-full flex justify-center items-center relative pb-16 pt-10 md:pt-0">
       <div className="container flex flex-col justify-center items-center">
         {/* Slider Content */}
-        <div className="w-[75%] -mt-18">
+        <div className="w-full md:w-[75%] mt-0 md:-mt-18 px-4 md:px-0">
           <Swiper
             modules={[Navigation, Autoplay, FreeMode]}
-            slidesPerView={4}
+            slidesPerView={1.5}
             spaceBetween={8}
             navigation
             freeMode={true}
             grabCursor={true}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: 2, 
+              },
+              1024: {
+                slidesPerView: 4, 
+              },
+            }}
           >
             {games.map((character) => (
               <SwiperSlide key={character.id}>

@@ -21,13 +21,13 @@ const Hero = () => {
   ];
 
   return (
-    <section className="hero-section w-full flex flex-col justify-center items-center pt-40 h-[100vh] overflow-hidden">
+    <section className="hero-section w-full flex flex-col justify-start items-baseline md:justify-center md:items-center pt-50 md:pt-40 pb-10 md:pb-0 h-auto md:h-[100vh] overflow-auto md:overflow-hidden">
       <div className="gradient-bg"></div>
       <div className="gradient-bg2"></div>
-      <div className="container flex justify-center items-center gap-8">
+      <div className="container flex flex-col md:flex-row justify-center items-center gap-8 px-4 md:px-0">
         {/* Left Container */}
-        <div className="left-container flex flex-1 flex-col gap-8 items-baseline">
-          <div className="flex items-center gap-2 text-2xl">
+        <div className="left-container flex flex-1 flex-col gap-4 md:gap-8 items-center md:items-baseline">
+          <div className="flex items-center gap-2 text-2xl text-center md:text-left">
             Play
             <img
               src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHRhcnFqZ2txNnB2NncwdGt3em52eW1ibGl5NHFjaG42ankxb2swMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ujpaHBFQxnZIALTObQ/giphy.gif"
@@ -42,28 +42,35 @@ const Hero = () => {
             />
             Enjoy
           </div>
-          <h1>ULTIMATE <span className="text-gradient">GAMER’S</span> HAVEN</h1>
+          <h1 className="text-center md:text-left ">
+            ULTIMATE <span className="text-gradient">GAMER’S</span> HAVEN
+          </h1>
           <Link
             to="/"
-            className="bg-amber-600 py-3.5 px-8 rounded-full text-xl"
+            className="bg-amber-600 py-3.5 px-8 rounded-full text-xl text-center md:text-left hidden md:block"
           >
             Contact Us
           </Link>
         </div>
 
         {/* Middle Container */}
-        <div className="middle-container flex flex-1 justify-center items-center">
-          <div className="hero-banner-bg">
-            <img className="w-full" src="/assets/hero-bg-orange.png" alt="banner" />
+        <div className="middle-container flex-1 justify-center items-center flex md:flex">
+          <div className="hero-banner-bg left-0 md:left-[40%] h-[100%]">
+            <img
+              className="w-full h-[100%]"
+              src="/assets/hero-bg-orange.png"
+              alt="banner"
+            />
           </div>
           <img
-            src="https://gameplex-final.vercel.app/gameplex-v1/assets/img/hero.png"
+            src="/NinjaGirl-Hero-Section.png"
             alt="Middle Man"
+            className="w-[1000px]"
           />
         </div>
 
         {/* Right/Feature Container */}
-        <div className="feature-container flex flex-1 flex-col px-12 py-12 border-2  rounded-3xl gap-8 bg-[#  ]/20 max-w-md backdrop:blur-2xl">
+        <div className="feature-container flex flex-1 flex-col px-12 py-12 border-2  rounded-3xl gap-8 max-w-md backdrop:blur-2xl">
           <h3 className="text-gradient pb-4 border-b-2 border-white/15">
             Core Features
           </h3>

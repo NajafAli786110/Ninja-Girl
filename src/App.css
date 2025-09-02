@@ -55,6 +55,12 @@
   transform: translateX(-12%);
 }
 
+@media screen and (max-width: 768px) {
+  .hero-banner-bg {
+    left: -89%;
+  }
+}
+
 /* Hero Section End*/
 
 /* Swipper Start */
@@ -153,6 +159,13 @@
 .main-footer {
   -webkit-clip-path: polygon(0 150px, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 150px, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 768px) {
+  .main-footer {
+    -webkit-clip-path: polygon(0 70px, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 70px, 100% 0, 100% 100%, 0 100%);
+  }
 }
 
 .emailForm-polygon {

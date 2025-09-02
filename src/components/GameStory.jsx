@@ -21,13 +21,8 @@ const GameStory = () => {
 
   return (
     <section className="features w-full flex items-center justify-center">
-      <div className="container flex items-center gap-16 py-24">
+      <div className="container flex flex-col md:flex-row items-center gap-16 py-6 md:py-24 px-4 md:px-0">
         <div className="clip-collage left_side flex-1">
-          {/* <img
-            src="https://play-lh.googleusercontent.com/-b10ZANdxciNrhKnKMtH1WX-VNedmeqJKF61MUbJ6G9BqT7fJKO64ugqLWQifv_xh8g"
-            alt="About section left side"
-            className="w-full rounded-[42px] object-cover"
-          /> */}
         </div>
 
         <div className="right_side flex flex-col gap-10 flex-1">
@@ -54,7 +49,7 @@ const GameStory = () => {
                           )
                         )}
                     </h4>
-                    <p className="text-md text-white/70!">{feature.desc}</p>
+                    <p className="text-md text-white/70! hidden md:block">{feature.desc}</p>
                   </div>
                 </li>
               ))}

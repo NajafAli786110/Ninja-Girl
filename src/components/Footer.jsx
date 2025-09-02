@@ -39,10 +39,10 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="main-footer w-full flex items-center justify-center py-50 pb-5 bg-[#e63946]">
-      <div className="container flex flex-col items-center justify-center gap-20 z-10">
+    <footer className="main-footer w-full flex items-center justify-center py-30 md:py-50 pb-5 px-4 md:px-0 bg-[#e63946]">
+      <div className="container flex flex-col items-center justify-center gap-10 md:gap-20 z-10">
         {/* Newsletter Box */}
-        <div className="newsletter-content min-w-full md:min-w-[85%] col-top flex items-center justify-between gap-6 p-16 bg-[#ffffff] rounded-4xl relative ">
+        <div className="newsletter-content min-w-full md:min-w-[85%] col-top flex flex-col md:flex-row items-center justify-between gap-6 p-8 md:p-16 bg-[#ffffff] rounded-4xl relative ">
           <div className="w-full content flex flex-col gap-2 z-40">
             <h3 className="text-black">Subscribe For Our Newsletter</h3>
             <p className="text-lg text-black/75!">
@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
 
           <div className="form-content w-full z-40">
-            <form action="#" className="w-full flex items-center">
+            <form action="#" className="w-full flex flex-col md:flex-row items-baseline md:items-center gap-2 md:gap-0">
               <input
                 type="email"
                 placeholder="Enter Your Email"
@@ -60,7 +60,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="emailForm-polygon bg-black text-white px-10 py-4 rounded-lg hover:bg-[#e63946] transition cursor-pointer text-lg font-bold"
+                className="emailForm-polygon bg-black text-white px-10 py-4 rounded-lg hover:bg-[#e63946] transition cursor-pointer text-lg font-bold w-full md:w-auto"
               >
                 Subscribe
               </button>
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
 
         {/* Footer */}
-        <div className="footer-content w-full md:w-[85%] flex items-center justify-between gap-24">
+        <div className="footer-content w-full md:w-[85%] flex flex-col md:flex-row items-center justify-between gap-16 md:gap-24">
           <div className="w-full left flex flex-col gap-2">
             <img src="/Logo.png" alt="Main Logo" className="size-40" />
             <p className="text-lg">

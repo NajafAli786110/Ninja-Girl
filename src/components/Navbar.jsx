@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
   return (
@@ -7,9 +8,9 @@ const Navbar = () => {
       <div className="container py-4 flex justify-between">
         <div className="w-full flex justify-between gap-14">
           {/* Left logo block */}
-          <div className=" polygon-logo pl-12 pr-24 py-2">
+          <div className=" polygon-logo pl-6 md:pl-12 pr-24 py-2">
             <Link to="/">
-              <img src="/Logo.png" alt="Website Logo" className="w-[130px]" />
+              <img src="/Logo.png" alt="Website Logo" className="w-[300px] md:w-[130px]" />
             </Link>
           </div>
 
@@ -50,10 +51,11 @@ const Navbar = () => {
             </nav>
             <Link
               to="/"
-              className="bg-amber-600 py-3.5 px-8 rounded-full text-xl"
+              className="bg-amber-600 py-3.5 px-8 rounded-full text-xl hidden md:block"
             >
               Contact Us
             </Link>
+            <RxHamburgerMenu className="text-[42px] md:hidden cursor-pointer p-2 border " />
           </div>
         </div>
       </div>
