@@ -63,7 +63,7 @@ const Hero = () => {
         </div>
 
         {/* Right/Feature Container */}
-        <div className="feature-container flex flex-1 flex-col px-12 py-12 border-2  rounded-3xl gap-8 bg-[#3b1e54]/20 max-w-md backdrop:blur-2xl">
+        <div className="feature-container flex flex-1 flex-col px-12 py-12 border-2  rounded-3xl gap-8 bg-[#  ]/20 max-w-md backdrop:blur-2xl">
           <h3 className="text-gradient pb-4 border-b-2 border-white/15">
             Core Features
           </h3>

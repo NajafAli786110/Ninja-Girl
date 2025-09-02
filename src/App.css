@@ -110,9 +110,9 @@
 
 /* Gameplay Video Section End */
 
-
 /* Extra Content Start */
-.team__item::before, .team__item::after {
+.team__item::before,
+.team__item::after {
   content: "";
   position: absolute;
   left: 0;
@@ -125,7 +125,7 @@
   -ms-transform: rotate(-55deg);
   -o-transform: rotate(-55deg);
   transform: rotate(-55deg);
-  opacity: .55;
+  opacity: 0.55;
   z-index: -1;
 }
 
@@ -148,3 +148,41 @@
   transition: all 0.3s ease-out 0s;
 }
 
+/* Footer Start */
+
+.main-footer {
+  -webkit-clip-path: polygon(0 150px, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 150px, 100% 0, 100% 100%, 0 100%);
+}
+
+.emailForm-polygon {
+  -webkit-clip-path: polygon(
+    20px 0%,
+    calc(100% - 20px) 0%,
+    100% 50%,
+    calc(100% - 20px) 100%,
+    20px 100%,
+    0% 50%
+  );
+}
+
+.newsletter-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/hero-bg.png") no-repeat center center/cover;
+  opacity: 0.1;
+  filter: invert(17%) sepia(100%) saturate(7500%) hue-rotate(-10deg)
+    brightness(90%) contrast(120%);
+}
+
+.social-icons a:hover img {
+  filter: none;
+  transition: all 0.3s ease-in-out;
+}
+.social-icons a:hover {
+  background: var(--color-gradient2);
+}
