@@ -20,8 +20,8 @@ const GameStory = () => {
   ];
 
   return (
-    <section className="features w-full flex items-center justify-center">
-      <div className="container flex flex-col md:flex-row items-center gap-16 py-6 md:py-24 px-4 md:px-0">
+    <section className="features w-full flex items-center justify-center relative z-10">
+      <div className="container flex flex-col md:flex-row items-center gap-16 py-6 md:py-24 md:pb-32 px-4 md:px-0">
         <div className="clip-collage left_side flex-1">
         </div>
 

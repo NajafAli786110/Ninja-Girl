@@ -39,7 +39,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="main-footer w-full flex items-center justify-center py-30 md:py-50 pb-5 px-4 md:px-0 bg-[#e63946]">
+    <footer className="main-footer w-full flex items-center justify-center py-30 md:py-50 pb-5! px-4 md:px-0 bg-[#560600]">
       <div className="container flex flex-col items-center justify-center gap-10 md:gap-20 z-10">
         {/* Newsletter Box */}
         <div className="newsletter-content min-w-full md:min-w-[85%] col-top flex flex-col md:flex-row items-center justify-between gap-6 p-8 md:p-16 bg-[#ffffff] rounded-4xl relative ">

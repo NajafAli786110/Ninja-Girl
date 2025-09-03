@@ -14,10 +14,11 @@
   --color-accent: #e63946;
   --color-highlight: #00b4d8;
   --color-bg-dark: #0d0d0e;
+  --color-bg-yellow: #feee00;
   --color-bg-gradient: linear-gradient(135deg, #000814, #001d3d, #3b1e54);
   --color-white: #ffffff;
-  --color-gradient1: linear-gradient(135deg, #FB4100, #FEEE00);
-  --color-gradient2: linear-gradient(135deg, #facc00, #e6aa05);
+  --color-gradient1: linear-gradient(135deg, #be7256, #000000);
+  --color-gradient2: linear-gradient(135deg, #e7a54e, #79eb2d);
 
   --font-gravox: "Gravox", sans-serif;
   --font-catamaran: "Catamaran", sans-serif;
@@ -37,7 +38,7 @@ html {
 body {
   font-family: var(--font-catamaran);
   font-size: 16px;
-  background: var(--color-bg-dark);
+  background: var(--color-primary);
   color: var(--color-white);
 }
 
@@ -77,7 +78,7 @@ p {
   color: #e0e0e0;
 }
 
-.section_subheading{
+.section_subheading {
   font-size: 18px;
   color: var(--color-white);
   font-weight: 500;

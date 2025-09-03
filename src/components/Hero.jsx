@@ -58,14 +58,14 @@ const Hero = () => {
           <div className="hero-banner-bg left-0 md:left-[40%] h-[100%]">
             <img
               className="w-full h-[100%]"
-              src="/assets/hero-bg-orange.png"
+              src="/Hero-section-flast.png"
               alt="banner"
             />
           </div>
           <img
-            src="/NinjaGirl-Hero-Section.png"
+            src="/NinjaGirl-Hero-Section 1.webp"
             alt="Middle Man"
-            className="w-[1000px]"
+            className="w-[1000px] -mt-10"
           />
         </div>
 

@@ -50,8 +50,8 @@ const games = [
 
 const HeroSlider = () => {
   return (
-    <section className="hero-swiper-slider w-full flex justify-center items-center relative pb-16 pt-10 md:pt-0">
-      <div className="container flex flex-col justify-center items-center">
+    <section className="hero-swiper-slider w-full flex justify-center items-center relative pb-4 pt-10 md:pt-0">
+      <div className="container flex flex-col justify-center items-center z-20">
         {/* Slider Content */}
         <div className="w-full md:w-[75%] mt-0 md:-mt-18 px-4 md:px-0">
           <Swiper
@@ -67,10 +67,10 @@ const HeroSlider = () => {
                 slidesPerView: 1,
               },
               640: {
-                slidesPerView: 2, 
+                slidesPerView: 2,
               },
               1024: {
-                slidesPerView: 4, 
+                slidesPerView: 4,
               },
             }}
           >
@@ -93,10 +93,13 @@ const HeroSlider = () => {
           </Swiper>
         </div>
       </div>
+
+      
+      
       <img
-        src="/assets/hero-bg-black-patti.png"
-        alt="Black patti"
-        className="black-patti absolute -z-30"
+        src="/bg-cloud-dark-blue-yellow.png"
+        alt="Section bottom pattern"
+        className="absolute top-0 left-0 w-full h-auto z-10"
       />
     </section>
   );

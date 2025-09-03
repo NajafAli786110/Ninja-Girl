@@ -38,7 +38,7 @@ const ExtraContent = () => {
   ];
 
   return (
-    <section className="w-full gallery-scrolling flex items-center justify-center py-20 px-4 md:px-0">
+    <section className="w-full gallery-scrolling flex items-center justify-center py-20 px-4 md:px-0 relative">
       <div className="container flex flex-col items-center justify-center gap-10">
         <div className="top_content flex flex-col gap-4 max-w-full md:max-w-2xl text-center">
           <span className="section_subheading">About Our Gaming Site</span>
@@ -52,7 +52,7 @@ const ExtraContent = () => {
               .map((member, index) => (
                 <div
                   key={index}
-                  className="team__item min-w-[22%] md:min-w-[22%] item py-12 px-8 flex flex-col items-center justify-center gap-8 bg-[#3b1e54]/20 border-2 border-white/10 rounded-3xl overflow-hidden relative"
+                  className="team__item min-w-[22%] md:min-w-[22%] item py-12 px-8 flex flex-col items-center justify-center gap-8 bg-[#ffffff]/20 border-2 border-white/10 rounded-3xl overflow-hidden relative"
                 >
                   <img
                     src={member.img}

@@ -1,32 +1,34 @@
 /* Hero Section */
 
 .hero-section {
-  background: url("/assets/hero-bg.png") no-repeat center center/cover;
+  background-color: #560600;
   position: relative;
   z-index: -2;
 }
 
-.hero-section::after,
-.hero-swiper-slider::after {
+.hero-section::after {
   content: "";
+  background: url("/bg-ninja-effect.png") no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+  /* background: rgba(0, 0, 0, 0.5); */
+  z-index: 1;
+  opacity: 0.2;
+  filter: invert(100%);
 }
 
-.polygon-bg {
-  background: #1a1d26;
+/* .polygon-bg {
+  background: #5E2824;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
 }
 
 .polygon-logo {
-  background-color: #1a1d26;
+  background-color: #5E2824;
   clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
-}
+} */
 
 .gradient-bg,
 .gradient-bg2 {
@@ -64,6 +66,7 @@
 /* Hero Section End*/
 
 /* Swipper Start */
+
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--color-white) !important;
@@ -100,10 +103,30 @@
 
 /* Game Features Section End*/
 
-/* Gameplay Video Section  */
-.video-section .w-full {
-  background: var(--color-gradient1);
+.features::after,
+.hero-swiper-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/mask features.png"),
+  radial-gradient(circle, #5b838b 0%, var(--color-primary) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -1;
+  opacity: 1;
 }
+
+.features, .download-sec {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 150px), 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 150px), 0 100%);
+}
+
+/* Gameplay Video Section  */
 
 .video-section .main-video {
   border: 8px solid transparent;
@@ -115,6 +138,23 @@
 }
 
 /* Gameplay Video Section End */
+
+.download-sec::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/mask features.png"),
+  radial-gradient(circle, #3b1e54 0%, var(--color-highlight) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -1;
+  opacity: 0.7;
+}
 
 /* Extra Content Start */
 .team__item::before,

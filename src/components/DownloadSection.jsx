@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const DownloadSection = () => {
   return (
-    <section className="features w-full flex items-center justify-center">
-      <div className="container flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16 py-6 md:py-24 px-4 md:px-0">
+    <section className="download-sec w-full flex items-center justify-center relative">
+      <div className="container flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16 py-6 md:py-40 md:pt-75 px-4 md:px-0">
         <div className="left_side flex-1">
           <img
             src="https://aicdn.picsart.com/8d8ce140-9b92-4527-bfed-120db9a062aa.png"
