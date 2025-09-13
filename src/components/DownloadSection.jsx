@@ -7,17 +7,19 @@ const DownloadSection = () => {
       <div className="container flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16 py-6 md:py-40 md:pt-75 px-4 md:px-0">
         <div className="left_side flex-1">
           <img
-            src="https://aicdn.picsart.com/8d8ce140-9b92-4527-bfed-120db9a062aa.png"
+            src="/Download Aniamte.gif"
             alt="Download section"
             className="h-auto md:h-[600px] w-full object-contain"
           />
         </div>
-        
+
         {/* Content */}
         <div className="right_side flex flex-col gap-10 flex-1">
           <div className="top_content flex flex-col gap-4">
             <span className="section_subheading">About Our Gaming Site</span>
-            <h2 className="fade-in-up">Forging Legends in the Gaming Universe</h2>
+            <h2 className="fade-in-up">
+              Forging Legends in the Gaming Universe
+            </h2>
           </div>
 
           {/* Para */}
