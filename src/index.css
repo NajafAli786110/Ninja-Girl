@@ -78,17 +78,6 @@ p {
   color: #e0e0e0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  opacity: 0;
-  transform: translateY(-30px);
-  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.fade-in-up {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .section_subheading {
   font-size: 18px;
   color: var(--color-white);
