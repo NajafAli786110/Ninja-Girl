@@ -44,8 +44,8 @@ const Footer = () => {
         {/* Newsletter Box */}
         <div className="newsletter-content min-w-full md:min-w-[85%] col-top flex flex-col md:flex-row items-center justify-between gap-6 p-8 md:p-16 bg-[#ffffff] rounded-4xl relative ">
           <div className="w-full content flex flex-col gap-2 z-40">
-            <h3 className="text-black">Subscribe For Our Newsletter</h3>
-            <p className="text-lg text-black/75!">
+            <h3 className="text-black fade-in-up">Subscribe For Our Newsletter</h3>
+            <p className="text-lg text-black/75! fade-in-up">
               Connect With Us For Gaming Update.
             </p>
           </div>
@@ -72,7 +72,7 @@ const Footer = () => {
         <div className="footer-content w-full md:w-[85%] flex flex-col md:flex-row items-center justify-between gap-16 md:gap-24">
           <div className="w-full left flex flex-col gap-2">
             <img src="/Logo.png" alt="Main Logo" className="size-40" />
-            <p className="text-lg">
+            <p className="text-lg fade-in-up">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
               voluptates ex necessitatibus itaque incidunt. Illo aut corporis
               iusto amet obcaecati, facere omnis nisi accusamus adipisci
@@ -80,7 +80,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="w-full social-container flex flex-col gap-4">
-            <h4>Follow with us:</h4>
+            <h4 className="fade-in-up">Follow with us:</h4>
             <div className="social-icons flex gap-2 items-baseline">
               {socialIcons.map((icon) => (
                 <a
@@ -114,7 +114,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-            <p className="text-xs">
+            <p className="text-xs fade-in-up">
               Game trademarks and copyrights are properties of their respective
               owners.{" "}
             </p>

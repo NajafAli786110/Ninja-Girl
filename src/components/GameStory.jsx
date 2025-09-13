@@ -28,7 +28,7 @@ const GameStory = () => {
         <div className="right_side flex flex-col gap-10 flex-1">
           <div className="top_content flex flex-col gap-4">
             <span className="section_subheading">About Our Gaming Site</span>
-            <h2>Forging Legends in the Gaming Universe</h2>
+            <h2 className="fade-in-up">Forging Legends in the Gaming Universe</h2>
           </div>
           <div className="features_list">
             <ul className="list flex flex-col gap-6">
@@ -38,7 +38,7 @@ const GameStory = () => {
                     <img src={feature.icon} alt="Icons" className="w-full" />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <h4 className="text-2xl!">
+                    <h4 className="text-2xl! fade-in-up">
                       {feature.title
                         .split(" ")
                         .map((word, idx) =>
@@ -49,7 +49,7 @@ const GameStory = () => {
                           )
                         )}
                     </h4>
-                    <p className="text-md text-white/70! hidden md:block">{feature.desc}</p>
+                    <p className="text-md text-white/70! hidden md:block fade-in-up">{feature.desc}</p>
                   </div>
                 </li>
               ))}

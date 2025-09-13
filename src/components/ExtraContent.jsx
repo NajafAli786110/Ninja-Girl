@@ -42,7 +42,7 @@ const ExtraContent = () => {
       <div className="container flex flex-col items-center justify-center gap-10">
         <div className="top_content flex flex-col gap-4 max-w-full md:max-w-2xl text-center">
           <span className="section_subheading">About Our Gaming Site</span>
-          <h2>Forging Legends in the Gaming Universe</h2>
+          <h2 className="fade-in-up">Forging Legends in the Gaming Universe</h2>
         </div>
 
         <div className="w-full flex gap-6 gallery-container">
@@ -60,8 +60,8 @@ const ExtraContent = () => {
                     className="size-52 rounded-full border-2 border-white bg-amber-600 p-4"
                   />
                   <div className="w-full content flex flex-col items-center gap-2">
-                    <h5 className="text-2xl!">{member.name}</h5>
-                    <p className="text-md">{member.role}</p>
+                    <h5 className="text-2xl! fade-in-up">{member.name}</h5>
+                    <p className="text-md fade-in-up">{member.role}</p>
                   </div>
                 </div>
               ))}

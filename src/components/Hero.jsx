@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="container flex flex-col md:flex-row justify-center items-center gap-8 px-4 md:px-0">
         {/* Left Container */}
         <div className="left-container flex flex-1 flex-col gap-4 md:gap-8 items-center md:items-baseline">
-          <div className="flex items-center gap-2 text-2xl text-center md:text-left">
+          <div className="flex items-center gap-2 text-2xl text-center md:text-left ">
             Play
             <img
               src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHRhcnFqZ2txNnB2NncwdGt3em52eW1ibGl5NHFjaG42ankxb2swMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ujpaHBFQxnZIALTObQ/giphy.gif"
@@ -42,7 +42,7 @@ const Hero = () => {
             />
             Enjoy
           </div>
-          <h1 className="text-center md:text-left ">
+          <h1 className="text-center md:text-left fade-in-up">
             ULTIMATE <span className="text-gradient">GAMER’S</span> HAVEN
           </h1>
           <Link
@@ -71,7 +71,7 @@ const Hero = () => {
 
         {/* Right/Feature Container */}
         <div className="feature-container flex flex-1 flex-col px-12 py-12 border-2  rounded-3xl gap-8 max-w-md backdrop:blur-2xl">
-          <h3 className="text-gradient pb-4 border-b-2 border-white/15">
+          <h3 className="text-gradient pb-4 border-b-2 border-white/15 fade-in-up">
             Core Features
           </h3>
           <div className="w-full inner-feature-container flex flex-col gap-6">
@@ -81,8 +81,8 @@ const Hero = () => {
                   <img src={item.icon} alt={item.title} className="size-12" />
                 </div>
                 <div className="flex flex-col">
-                  <h4 className="text-lg">{item.title}</h4>
-                  <p className="text-sm text-gray-300">{item.desc}</p>
+                  <h4 className="text-lg fade-in-up">{item.title}</h4>
+                  <p className="text-sm text-gray-300 fade-in-up">{item.desc}</p>
                 </div>
               </div>
             ))}

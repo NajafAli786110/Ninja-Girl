@@ -17,18 +17,18 @@ const DownloadSection = () => {
         <div className="right_side flex flex-col gap-10 flex-1">
           <div className="top_content flex flex-col gap-4">
             <span className="section_subheading">About Our Gaming Site</span>
-            <h2>Forging Legends in the Gaming Universe</h2>
+            <h2 className="fade-in-up">Forging Legends in the Gaming Universe</h2>
           </div>
 
           {/* Para */}
           <div className="flex flex-col gap-4">
-            <p className="text-xl">
+            <p className="text-xl fade-in-up">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
               quas cumque nobis vel eveniet error accusantium, nulla nihil
               voluptatum eum, repudiandae in eos quod pariatur culpa dignissimos
               reprehenderit excepturi placeat.
             </p>
-            <p className="text-xl">
+            <p className="text-xl fade-in-up">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
               quas cumque nobis vel eveniet error accusantium, nulla nihil
               voluptatum eum, repudiandae in eos quod pariatur culpa dignissimos

@@ -83,7 +83,7 @@ const HeroSlider = () => {
                       alt={character.title}
                       className="w-full h-90 object-cover p-3 rounded-xl"
                     />
-                    <h5 className="text-white absolute bottom-2 bg-white/10 p-2 rounded-lg backdrop-blur-sm text-center min-w-[90%]">
+                    <h5 className="text-white absolute bottom-2 bg-white/10 p-2 rounded-lg backdrop-blur-sm text-center min-w-[90%] fade-in-up">
                       {character.title}
                     </h5>
                   </div>
